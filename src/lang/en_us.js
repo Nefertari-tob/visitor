@@ -1,0 +1,105 @@
+/*
+ * @Author: Yangliwei
+ * @Date: 2020-05-26 16:01:54
+ * @LastEditTime: 2020-06-18 15:23:49
+ * @LastEditors: Yangliwei
+ * @FilePath: \express_platform_h5\src\lang\en_us.js
+ * @Just Think
+ * @Description:
+ */
+
+module.exports = {
+  router: {
+    user: "People",
+    business: "Business",
+    system: "System",
+    permission: "Dormitory Devices",
+    count: "Statistical Analysis",
+    chart: "Chart"
+  },
+  system: {
+    name: "Dormitory management platform",
+    Personalcenter: "Personal Center",
+    Infocenter: "Notice",
+    theme: "Theme",
+    login: "Login",
+    registered: "Register",
+    logout: "Logout",
+    changePassword: "Change Password",
+    pleaseFill: "Please Fill in ",
+    totalText: "Total of {msg} data",
+    time: "Time",
+    cancel: "Cancel ",
+    return: "Return",
+    relogin: "re-register",
+    edit: "Edit",
+    del: "Delete",
+    yes: "Yes",
+    no: "No",
+    download: "Download",
+    confirmdel: "Are you sure you want to delete?",
+    cannotback: "Cannot be restored after deletion",
+    file: "File",
+    save: "Save",
+    start: " Start",
+    end: " End",
+    content: "content",
+    MMDD: "{M}-{D}",
+    from: "source",
+    All: "All",
+    nostart: "Has not Started",
+    processing: "In Progress",
+    over: "Ended",
+    community: "Community",
+    AgreeAgreement: "Please agree to the user agreement ",
+    nopromise: "No permission",
+    newNotification: "You have {msg} new message !",
+    untreatedNotification: "You have {msg} message unprocessed !",
+    clickToDetail: "Click for details",
+    wirteMsg: "Please input content ...",
+    send: "send",
+    message: "Message",
+    searchUser: "Search users",
+    mine: "Mine",
+    maxlength: "The maximum length {msg}",
+    isint: "Please enter an integer",
+    submit: "Submit",
+    nowPage: "The current page"
+  },
+  login: {
+    phoneEmail: "Mobile Number / Email",
+    password: "Password",
+    forgetPassword: "Forgot Password",
+    policy: "Privacy Policy",
+    registerAccount: "Register Account",
+    welcomeReg: "Welcome Registration",
+    username: "Username",
+    phone: "Mobile Number",
+    email: "Email",
+    correct: "Please Fill in the Correct {msg}",
+    verificationCode: "Verification Code",
+    sendVerificationCode: "Send Verification Code",
+    Resendinseconds: "Resend in {msg} seconds",
+    AgreeCommunity:
+      "By clicking Register, you have read and agreed to the tournament community",
+    UserAgreement: "User Agreement",
+    AgreeAgreement: "Agree with User Agreement",
+    lookAgreement: "View User Agreement",
+    newPassword: "New Password",
+    Confirmreset: "Confirm Reset",
+    editPassword: "change Password",
+    oldPassword: "Old Password",
+    reNewPassword: "New Password Again",
+    pwdLength: "Password must be 6-20 digits",
+    samePwd: "The passwords entered twice do not match",
+    name: "Name",
+    address: "Address",
+    company: "Company",
+    University: "University",
+    major: "Professional",
+    job: "Job",
+    education: "Education",
+    jobTitle: "Job Title",
+    avatar: "Avatar "
+  }
+};

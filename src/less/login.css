@@ -1,0 +1,63 @@
+#login {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  min-height: 550px;
+  justify-content: center;
+}
+#login .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+#login .logindiv {
+  width: 600px;
+  height: 600px;
+  padding-left: 100px;
+  border-radius: 5px;
+  overflow: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+#login .logindiv .login_left {
+  height: 100px;
+  margin: 20px 0;
+}
+#login .logindiv .login_left .welcome {
+  font-size: 50px;
+  margin: 0px auto;
+  color: #FFC507;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+#login .logindiv .login_right {
+  height: 100%;
+  z-index: 1;
+  justify-content: center;
+  border-radius: 30px;
+}
+#login .logindiv .login_right .systitle {
+  margin: 40px 0;
+  font-size: 30px;
+  color: #5087DA;
+}
+#login .logindiv .login_right .loginForm {
+  width: 300px;
+}
+#login .logindiv .login_right .loginForm .login-button {
+  width: 100%;
+  background-color: #EEF2FE;
+  color: #4D2D88;
+  letter-spacing: 20px;
+  border: none;
+}
+#login .logindiv .login_right .loginForm input {
+  border: 1px solid #d8dff3;
+}
+.ant-form-item-children {
+  display: flex;
+}

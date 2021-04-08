@@ -1,0 +1,392 @@
+@import './color.less';
+//基础样式
+body {
+  color: #333;
+}
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+article,
+aside,
+blockquote,
+body,
+button,
+dd,
+details,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+input,
+legend,
+li,
+menu,
+nav,
+ol,
+p,
+section,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+/*控制整个滚动条*/
+::-webkit-scrollbar {
+  background-color: rgb(233, 233, 233);
+  width: 10px;
+  height: 10px;
+  background-clip: padding-box;
+  border-radius: 5px;
+}
+
+/*滚动条中间滑动部分*/
+::-webkit-scrollbar-thumb {
+  background-color: rgb(190, 190, 190);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(141, 141, 141);
+}
+
+//定制ant组件样式
+.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub {
+  background: none;
+}
+
+.ant-table-body{
+  overflow-x: auto !important;
+}
+.ant-menu-inline {
+  min-width: 240px;
+}
+
+.ant-drawer-body {
+  margin-bottom: 40px;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+  background: rgba(255, 255, 255, 0.2);
+  height: 40px;
+}
+.ant-menu-horizontal {
+  line-height: 40px;
+}
+.ant-menu-dark .ant-menu-item-selected > a,
+.ant-menu-dark .ant-menu-item-selected > a:hover {
+  height: 37px;
+  padding: 0 10px;
+  border-bottom: 2px solid white;
+  transition: all 0.3s;
+}
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td {
+  padding: 10px;
+}
+
+.ant-checkbox-wrapper + .ant-checkbox-wrapper {
+  margin-left: 0;
+}
+.ant-checkbox-wrapper {
+  margin-right: 10px;
+}
+.ant-calendar .ant-calendar-ok-btn-disabled,
+.ant-calendar .ant-calendar-ok-btn.disabled,
+.ant-calendar .ant-calendar-ok-btn[disabled],
+.ant-calendar .ant-calendar-ok-btn-disabled:hover,
+.ant-calendar .ant-calendar-ok-btn.disabled:hover,
+.ant-calendar .ant-calendar-ok-btn[disabled]:hover,
+.ant-calendar .ant-calendar-ok-btn-disabled:focus,
+.ant-calendar .ant-calendar-ok-btn.disabled:focus,
+.ant-calendar .ant-calendar-ok-btn[disabled]:focus,
+.ant-calendar .ant-calendar-ok-btn-disabled:active,
+.ant-calendar .ant-calendar-ok-btn.disabled:active,
+.ant-calendar .ant-calendar-ok-btn[disabled]:active,
+.ant-calendar .ant-calendar-ok-btn-disabled.active,
+.ant-calendar .ant-calendar-ok-btn.disabled.active,
+.ant-calendar .ant-calendar-ok-btn[disabled].active {
+  color: white;
+}
+.ant-table-fixed-right {
+  overflow: unset;
+}
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected,
+.ant-menu.ant-menu-dark .ant-menu-item-selected {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.ant-badge-count {
+  z-index: 1;
+}
+
+// 样式
+.between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.grow{
+  flex-grow: 1;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mr40 {
+  margin-right: 40px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.ml30 {
+  margin-left: 30px;
+}
+.ml40 {
+  margin-left: 40px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.text_fade {
+  color: #9b9b9b;
+}
+.green {
+  color: @successcolor;
+}
+.red {
+  color: @dangercolor;
+}
+.orange {
+  color: orange;
+}
+.a {
+  color: @basecolor;
+}
+.blue {
+  color: @basecolor;
+}
+//md编辑器
+.v-note-wrapper .v-note-panel .v-note-show .v-show-content {
+  background: white !important;
+  padding: none !important;
+}
+
+
+//通用样式
+.fillBgBtn {
+  width: 180px;
+  height: 32px;
+  border-radius: 20px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid @linecolor;
+}
+
+.main {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid @linecolor;
+}
+
+.mainhead {
+  font-weight: bolder;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  line-height: 32px;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 20px;
+    margin-right: 5px;
+    background: #000000a6;
+  }
+}
+
+.drawerButtom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e9e9e9;
+  padding: 10px 16px;
+  background: #fff;
+  text-align: right;
+}
+.ant-drawer-body {
+  margin-bottom: 40px;
+}
+.customtag {
+  width: 80px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 25px;
+  height: auto;
+  cursor: pointer;
+}
+
+.permissiondiv {
+  display: flex;
+  max-width: 300px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  flex-wrap: wrap;
+}
+
+.pointer {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.pointer:hover {
+  color: #1890ff;
+}
+
+.round-select{
+  .ant-select-selection{
+    border-radius: 15px;
+  }
+}
+
+.ant-pagination-total-text{
+  height: 32px;
+  line-height: 32px;
+}
+
+.mainhead {
+  font-weight: bolder;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  line-height: 32px;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 20px;
+    margin-right: 5px;
+    background: #000000a6;
+  }
+}
+
+.avatar{
+  width: 50px;
+  height: 64px;
+  border-radius: 4px;
+  object-fit: cover;
+  box-shadow: 0px 0px 5px #e2e2e2;
+  transition: 0.3s box-shadow;
+  &:hover{
+    box-shadow: 0px 0px 10px #c0c0c0;
+  }
+}
+
+.ant-upload-list-item{
+  margin-top: 0;
+}
+.ant-upload-list-item-name{
+  padding-right: 22px;
+}
+.title{
+  min-width: 150px;
+  display: flex;
+}
+.titlebtn{
+  line-height: 30px;
+  text-align: center;
+  padding: 0 10px;
+  min-width: 120px;
+}
+
+.skyBlue{
+  color: #80BCFA;
+  background-color: #EFFAFC;
+}
+
+.selectFile{
+  min-width: 180px;
+  background-color: #EFFAFC;
+  color: #555;
+  margin-right: 90px;
+}
+
+.subBtn{
+  background-color: #2E286C;
+  color: #fff;
+  border-radius: 10px;
+  border: 0;
+}
+
+.cancel{
+  color: #2E286C;
+  border: 1px solid #2E286C;
+  border-radius: 10px;
+}
